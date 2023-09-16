@@ -39,7 +39,9 @@ import JobListing from '../components/JobListing.vue';
      },
      methods:{
        goBackRouter(){
+        //  const goBack = this.$router.back({name:"home"})
          const goBack1 = this.$router.push({name:"home"})
+
           return goBack1;
        }
      }

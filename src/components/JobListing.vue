@@ -26,50 +26,59 @@
 </template>
 
 <script>
-import axios from "axios";
+import { mapState, mapActions } from "pinia";
 import JobListItem from "./JobListItem.vue";
+import {useJobsStore, FETCH_JOBS, 
+         GET_JOBS_BY_ORG 
+        } from "@/stores/jobs"
 
 
 export default{
 
     name:"JobListing",
-    components:{JobListItem},
+    components:{JobListItem, },
     computed:{
         isCurrentPage(){
              const currentPage = this.$route.query.page || "1";
              return parseInt(currentPage);
         },
-        isPreviousPage(){
-          const previousPage = this.isCurrentPage - 1
-          const firstPage = 1;
-          return previousPage >= firstPage? previousPage: undefined;
-        },
-        isNextPage(){
-             const nextPage = this.isCurrentPage + 1;
-             const maxPage = this.jobs.length / 5
-             return nextPage <= maxPage? nextPage : undefined ;
-        },
+        ...mapState(useJobsStore, {
+          GET_JOBS_BY_ORG,
 
-        limitResponse(){
+           isPreviousPage(){
+                const previousPage = this.isCurrentPage - 1
+                const firstPage = 1;
+                return previousPage >= firstPage? previousPage: undefined;
+            
+            },
+            isNextPage(){
+                const nextPage = this.isCurrentPage + 1;
+                const maxPage = this.GET_JOBS_BY_ORG.length / 5
+                return nextPage <= maxPage? nextPage : undefined ;
+            },
 
-            const pageNum = this.isCurrentPage;
-            const isFirstIndex = (pageNum-1);
-            const isLastIndex = pageNum * 5;
-            return this.jobs.slice(isFirstIndex, isLastIndex);
-            return this.jobs.slice(0,5);
-        },
+            limitResponse(){
+                
+                const pageNum = this.isCurrentPage;
+                const isFirstIndex = (pageNum-1);
+                const isLastIndex = pageNum * 5
+
+                const isLimitResponse = this.GET_JOBS_BY_ORG.slice(isFirstIndex, isLastIndex);
+                return this.GET_JOBS_BY_ORG.slice(isFirstIndex, isLastIndex);
+                return this.jobs.slice(0,5);
+            },
+        }),
+
         
     },
-    data(){
-        return{
-            jobs: [],
-        }
+ 
+    async mounted(){  
+     this.FETCH_JOBS ();                                   
     },
-    async mounted(){
-       const isBaseUrl = import.meta.env.VITE_APP_API;
-       const isRes = await axios.get(`${isBaseUrl}/jobs`);
-            return this.jobs = isRes.data;                                       
-    },
+
+    methods:{
+        ...mapActions(useJobsStore, [FETCH_JOBS])
+    }
 
 }
 </script>

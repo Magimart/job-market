@@ -5,7 +5,8 @@
         class="relative h-full w-full m-2l flex flex-row bg-slate-100  px-4 border-3 border-orange-500 " 
         placeholder="this is a reusable component"
         @input="handleUserData"
-    />  
+    />
+    
 </template>
 
 <script>
@@ -18,8 +19,9 @@
                 required: true
             },  
         }, 
-        emits:["update:modelValue"],
-        methods:{           
+        emits:["update:modelValue"], 
+        methods:{
+            
             handleUserData($event){              
             this.$emit("update:modelValue", $event.target.value);
 

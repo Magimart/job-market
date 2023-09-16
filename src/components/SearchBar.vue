@@ -20,6 +20,7 @@
             <span class="bg-blue-300 px-2 h-full flex items-center">
                 in
             </span>
+
             <label for="area" class="text-sm h-full flex items-center">area</label>
             <input
                :value="userLocation"
@@ -65,13 +66,12 @@ export default{
         },
         handleUserSubmition(){
            this.$router.push({
-                name: "searchResults", 
+                name: "searchResults",
                 query:{ userInput: this.userInput, location: this.userLocation}
            })  
         }
     },
-    components: { 
-    }
+    
 }
 
 </script>

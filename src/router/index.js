@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory  } from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import JobSearchResultPage from "../views/JobSearchResultPage.vue";
 import SingleJobPage from "../views/SingleJobPage.vue";
+import TeamsPage from "../views/TeamsPage.vue"
 
 
 const routes =[
@@ -18,10 +19,15 @@ const routes =[
         component: JobSearchResultPage
     },
     {
-        path: "/jobs/results/:id", // this is a wildcard route
+        path: "/jobs/results/:id",
         name: "SingleJobPage",
         component:SingleJobPage
-    }
+    },
+    {
+        path: "/teams",
+        name:"teamsPage",
+        component: TeamsPage
+    },
 ]
 
 const router = createRouter({

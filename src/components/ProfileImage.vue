@@ -2,8 +2,8 @@
     <div class="imageWraper h-16 w-16">
        <img
            id="profileImg" 
-          v-bind:src="imageUrl" alt="user-profile-image"
-          class="h-full w-full"
+          v-bind:src="imageUrl" alt="userProfileImage"
+          class="profileImage h-full w-full"
        />
     </div>
 </template>

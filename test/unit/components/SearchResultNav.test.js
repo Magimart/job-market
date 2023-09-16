@@ -39,14 +39,15 @@ describe("SearchResultNav", ()=>{
  
          render(SearchResultNav,   {      
                  global: {
-                    mocks:{
-                     $route: $route
-                    },
-                    stubs:{
+                     mocks:{
+                      $route: $route
+                     },
+                     stubs:{
                      FontAwesomeIcon:true,
                      RouterLink: RouterLinkStub,
-                    }
-                 },               
+                     }
+                 },
+                
          });
  
      const isScreen = screen.get;
@@ -57,3 +58,5 @@ describe("SearchResultNav", ()=>{
     })
  });
 
+
+//  */

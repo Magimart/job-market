@@ -16,12 +16,9 @@ describe("ReUsableInput", ()=>{
        });
 
         const inputData = screen.getByRole("textbox");
-        console.log("this is the user text------xxx---x",  inputData)
    
-         console.log(emitted())
        let awaitedUserInput =  await userEvent.type(inputData, "n");
-        console.log("is emitted", emitted());
-
+       
     });
 
 });

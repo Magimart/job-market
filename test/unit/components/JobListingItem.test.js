@@ -14,7 +14,7 @@ describe("test job list item", ()=>{
 
         render(JobListItem  , {
             global: {
-                mocks:{ // mocking helps to replace a global component property or this keyword
+                mocks:{
                  $route: $route
                 },
                 stubs:{

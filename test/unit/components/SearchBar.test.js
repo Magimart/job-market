@@ -35,7 +35,8 @@ describe("job search form result", ()=>{
             name: /search/i
           })
 
-          await userEvent.click(isSubmitButton);
+          // assimilate click event triggered from user
+          await userEvent.click(isSubmitButton)
 
            expect(pushVTestMock).toHaveBeenCalledWith({
               name: "searchResults", 

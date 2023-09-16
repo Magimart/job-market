@@ -1,5 +1,4 @@
 <template>
-
     <input
         type="text"
         :value="inputValue"

@@ -1,40 +1,104 @@
 {
+
+    "spotlights": [
+        {
+          "id": 1,
+          "img": "https://images.unsplash.com/photo-1556075798-4825dfaaf498",
+          "title": "Cloud Engineering",
+          "description": "Build fun stuff in the cloud. It's a lot of fun, we promise!"
+        },
+        {
+          "id": 2,
+          "img": "https://images.unsplash.com/photo-1511376777868-611b54f68947",
+          "title": "Executive Leadership",
+          "description": "Be a leader for everyone. Leadership builds character."
+        }
+      ],
     "jobs": [
         {
             "id":1,
             "title": "Angular Developer",
-            "organization":"Vue and me",
+            "organization":"microsoft",
             "degree":"Master's",
             "jopType": "Intern",
             "locations": ["Lisbon"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there"
             ],
             "preferredQualification":[
-
+            
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
+            
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2021-07-04"
 
         },
-
         {
             "id":2,
             "title": "React Developer",
-            "organization":"Script and me",
+            "organization":"telegram",
             "degree":"Bachelor",
             "jopType": "Intern",
             "locations": ["Berlin"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
 
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2021-07-04"
 
@@ -47,13 +111,46 @@
             "jopType": "full time",
             "locations": ["Stockholm"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-01-07"
 
@@ -61,18 +158,51 @@
         {
             "id":4,
             "title": "UI & Ux Developer",
-            "organization":"Vue and me",
+            "organization":"Agular space",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["London"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-11-04"
 
@@ -80,18 +210,43 @@
         {
             "id":5,
             "title": "Dev ops Developer",
-            "organization":"Vue and me",
+            "organization":"Agular space",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["cuba"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable."
             ],
             "dateCreated":"2022-01-02"
 
@@ -99,18 +254,32 @@
         {
             "id":6,
             "title": "Full stack Developer",
-            "organization":"Kalinagra",
+            "organization":"microsoft",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["Tokyo"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
 
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,"
+             
             ],
             "dateCreated":"2022-11-14"
 
@@ -123,13 +292,46 @@
             "jopType": "Diploma",
             "locations": ["London"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-01-01"
 
@@ -137,18 +339,51 @@
         {
             "id":8,
             "title": "Oracle Developer",
-            "organization":"Vue and me",
+            "organization":"Agular space",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["Cape Town"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2022-11-04"
 
@@ -156,18 +391,51 @@
         {
             "id":9,
             "title": "Game Developer",
-            "organization":"Vue and me",
+            "organization":"meta world",
             "degree":"Masters",
             "jopType": "Diploma",
             "locations": ["Dubai"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-01-04"
 
@@ -175,18 +443,46 @@
         {
             "id":10,
             "title": "Typescript Developer",
-            "organization":"Vue and me",
+            "organization":"Agular space",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["New York"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the "
+              
             ],
             "dateCreated":"2023-09-04"
 
@@ -194,18 +490,43 @@
         {
             "id":11,
             "title": "cloud Developer",
-            "organization":"Vue and me",
+            "organization":"telegram",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["New York"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,"
+                
             ],
             "dateCreated":"2023-01-04"
 
@@ -213,18 +534,51 @@
         {
             "id":12,
             "title": "Nodejs Developer",
-            "organization":"Vue and me",
+            "organization":"telegram",
             "degree":"Masters",
             "jopType": "Diploma",
             "locations": ["Toronto"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-09-04"
 
@@ -232,18 +586,44 @@
         {
             "id":13,
             "title": "MS Developer",
-            "organization":"Vue and me",
+            "organization":"microsoft",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["New York"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,"
+           
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet."
+               
             ],
             "dateCreated":"2023-05-04"
 
@@ -251,18 +631,51 @@
         {
             "id":14,
             "title": "Next Developer",
-            "organization":"Vue and me",
+            "organization":"meta world",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["New York"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-03-10"
 
@@ -270,18 +683,51 @@
         {
             "id":15,
             "title": "Php Developer",
-            "organization":"Vue and me",
+            "organization":"telegram",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["New Delhi"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-09-02"
 
@@ -293,13 +739,46 @@
             "jopType": "Diploma",
             "locations": ["New York"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-07-02"
 
@@ -307,18 +786,51 @@
         {
             "id":17,
             "title": "Wordpress Developer",
-            "organization":"Komomo",
+            "organization":"meta world",
             "degree":"Bachelors",
             "jopType": "Diploma",
             "locations": ["New York"],
             "minimumQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "preferredQualification":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "description":[
-
+                "Where can I get some?",
+                "There are many variations of passages of Lorem Ipsum available,",
+                "but the majority have suffered alteration in some form, by injected humour,",
+                "or randomised words which don't look even slightly believable.",
+                "If you are going to use a passage of Lorem Ipsum, you need to be sure there",
+                "isn't anything embarrassing hidden in the middle of text. All the ",
+                "Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,",
+                "making this the first true generator on the Internet.",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of",
+                "model sentence structures, to generate Lorem Ipsum which looks reasonable. ",
+                "The generated Lorem Ipsum is therefore always free from repetition, injected humour,",
+                "or non-characteristic words etc."
             ],
             "dateCreated":"2023-09-04"
 
