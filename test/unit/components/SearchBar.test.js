@@ -23,7 +23,7 @@ describe("job search form result", ()=>{
                     }
                  }
             });
-
+            git push origin HEAD:main
           const isUserInput =  screen.getByRole('textbox', {  name: /proffession/i});
           await userEvent.type(isUserInput, "web developer");
            
