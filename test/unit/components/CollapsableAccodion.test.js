@@ -28,8 +28,6 @@ describe("collapsal acordion", ()=> {
         await userEvent.click(button);
        expect(screen.getByText("nested child")).toBeInTheDocument()
 
-
-
     });
     it("note that test of title and decription are all same as the above")
 

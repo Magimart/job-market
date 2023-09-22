@@ -17,7 +17,7 @@ describe("Main nav component", ()=>{
         render(MainNav,   {                     
                 global: {
                     plugins: [pinia],
-                    mocks:{
+                    mocks:{ 
                         $route
                     },
                     stubs:{
@@ -47,14 +47,13 @@ describe("Main nav component data injected", ()=>{
                         $route
                 },
                 stubs:{
-                FontAwesomeIcon:true,
-                RouterLink: RouterLinkStub,
+                    FontAwesomeIcon:true,
+                    RouterLink: RouterLinkStub,
                 }
             },
              data(){
                  return{
-                     company: "job makts"
-                     // NOTE:: that you can inject any value on the campany key  
+                     company: "job makts" //search markt this inject company name with defined data
                  }
              }
        });
@@ -116,7 +115,6 @@ describe("Main nav component data injected", ()=>{
         let profileImageUrl = screen.queryByRole("img", {
                  name: /userprofileimage/i                          
         });
-
         expect(profileImageUrl).not.toBeInTheDocument();
 
         // btn
@@ -126,7 +124,7 @@ describe("Main nav component data injected", ()=>{
       
         userStore.isLoggedIn = true;
 
-          await userEvent.click(isSignInBtn)
+        await userEvent.click(isSignInBtn)
 
            profileImageUrl = screen.queryByRole("img", {
             name: /userprofileimage/i
@@ -136,7 +134,8 @@ describe("Main nav component data injected", ()=>{
         expect(profileImageUrl).toBeInTheDocument();
 
     })
-   
+
+    
  })
 
 

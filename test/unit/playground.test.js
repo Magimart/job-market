@@ -9,16 +9,6 @@ describe("sum of two nums", ()=>{
         });
 })
 
-/**
- *describe("even or odd num", ()=>{
-    it("it return if a num is even or odd", ()=>{
-             expect(evenOrOddNum(5)).toBe("odd");
-     });
-})
-
-you can also test if  number is even by nesting
- */
-
 
 describe("even or odd num", ()=>{
 
@@ -29,12 +19,6 @@ describe("even or odd num", ()=>{
       })
 })
 
-
-// describe("when num is odd", ()=>{ check test coverage
-//     it("it return string odd", ()=>{
-//           expect(evenOrOddNum(5)).toBe("odd");
-//     });
-// });
 
 describe("multiplication", ()=>{
        it("multiples two nums", ()=>{

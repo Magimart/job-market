@@ -19,7 +19,7 @@ describe("jobs action", ()=>{
         setActivePinia(createPinia());
     });
     
-    describe("FETCH_JOBS", ()=>{ //_____section 273 failed
+    describe("FETCH_JOBS", ()=>{ 
         it("executes fetch jobs action requests", async () =>{
 
             axios.get.mockResolvedValue({data:["vue", "sql"]});
@@ -36,7 +36,7 @@ describe("getters for unique organisations", ()=>{
         setActivePinia(createPinia());
     });
     
-    describe("gets unique data strings fo the organisation", ()=>{ //_____section 273 failed
+    describe("gets unique data strings fo the organisation", ()=>{ //_____intended sec 273 failed
         it("unique organisation", () =>{
 
             const store = useJobsStore()            

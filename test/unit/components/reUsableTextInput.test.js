@@ -1,5 +1,5 @@
 import { screen, render } from "@testing-library/vue";
-import { describe, expect, it } from "vitest";
+import { describe, it } from "vitest";
 import ReUsableInput from "../../../src/components/IsReUsableInputs.vue";
 import  userEvent  from "@testing-library/user-event";
 
@@ -18,7 +18,7 @@ describe("ReUsableInput", ()=>{
         const inputData = screen.getByRole("textbox");
    
        let awaitedUserInput =  await userEvent.type(inputData, "n");
-       
+   
     });
 
 });

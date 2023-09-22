@@ -8,7 +8,7 @@
             <font-awesome-icon :icon="['fas', 'search']"/>
         </div>
         <div class="flex flex-row text-sm h-max w-full ">
-            <span class="  bg-orange-300 p-0.5">123
+            <span class="  bg-orange-300 p-0.5">{{ isFilteredSearchResult}}: 
                 <span class="bg-green-400 px-0.5 ">jobs matched</span>
             </span>                    
         </div> 
@@ -17,15 +17,34 @@
 
 
 <script>
+import { mapState, mapActions } from "pinia";
+import {useJobsStore, 
+         ALL_FILTERED_JOBS
+        } from "@/stores/jobs"
+
 
 
 export default{
     name: "SearchResultNav",
+    data(){
+        return {
+            isJobResultNumuber: ""
+        }
+    }, 
     computed: {
+        ...mapState(useJobsStore, {
+            ALL_FILTERED_JOBS, 
+
+            isFilteredSearchResult(){
+                return this.ALL_FILTERED_JOBS.length ;
+            },
+
+        }),
        userOnSearchResultPage(){
           return this.$route.name === "searchResults"          
         } 
     },
 }
-
 </script>
+
+

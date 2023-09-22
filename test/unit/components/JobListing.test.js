@@ -7,9 +7,7 @@ import { createTestingPinia } from "@pinia/testing";
 import {useJobsStore, FETCH_JOBS } from "@/stores/jobs"
 
 
-
 vi.mock("axios");
-
 
 describe("test for job listing items", ()=>{
     const pinia = createTestingPinia();
@@ -37,12 +35,9 @@ describe("test for job listing items", ()=>{
 
 
    it("displays total of 5 jobs", async()=>{
-
-    const $route = {query:{page:"1"}}
-
-    
-      const jobsStore= useJobsStore()
-       jobsStore.jobs =  Array(10).fill({})
+       const $route = {query:{page:"1"}}
+       const jobsStore= useJobsStore()
+       jobsStore.jobs =  Array(10).fill({}) 
 
        render(JobListing, {
            global: {
@@ -64,7 +59,6 @@ describe("test for job listing items", ()=>{
      it("it shows page number 1", ()=>{
         const queryParam = {page: undefined};
         const $route = {query: queryParam}
-
 
         render(JobListing, {
            global: {
@@ -101,10 +95,7 @@ describe("test for job listing items", ()=>{
             },
             });
        expect(screen.getByText('page:3')).toBeInTheDocument()
-
      });
-
    })
-
 });
 

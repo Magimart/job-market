@@ -20,7 +20,7 @@
             "title": "Angular Developer",
             "organization":"microsoft",
             "degree":"Master's",
-            "jopType": "Intern",
+            "jobType": "Intern",
             "locations": ["Lisbon"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -67,7 +67,7 @@
             "title": "React Developer",
             "organization":"telegram",
             "degree":"Bachelor",
-            "jopType": "Intern",
+            "jobType": "full time",
             "locations": ["Berlin"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -108,7 +108,7 @@
             "title": "Software Developer",
             "organization":"Vue and me",
             "degree":"Master's",
-            "jopType": "full time",
+            "jobType": "full time",
             "locations": ["Stockholm"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -160,7 +160,7 @@
             "title": "UI & Ux Developer",
             "organization":"Agular space",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "half time",
             "locations": ["London"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -212,7 +212,7 @@
             "title": "Dev ops Developer",
             "organization":"Agular space",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "half time",
             "locations": ["cuba"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -256,7 +256,7 @@
             "title": "Full stack Developer",
             "organization":"microsoft",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "hybrid",
             "locations": ["Tokyo"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -289,7 +289,7 @@
             "title": "Java Developer",
             "organization":"Vue and me",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "Intern",
             "locations": ["London"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -341,7 +341,7 @@
             "title": "Oracle Developer",
             "organization":"Agular space",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "full time",
             "locations": ["Cape Town"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -393,7 +393,7 @@
             "title": "Game Developer",
             "organization":"meta world",
             "degree":"Masters",
-            "jopType": "Diploma",
+            "jobType": "hybrid",
             "locations": ["Dubai"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -445,7 +445,7 @@
             "title": "Typescript Developer",
             "organization":"Agular space",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "hybrid",
             "locations": ["New York"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -485,14 +485,13 @@
               
             ],
             "dateCreated":"2023-09-04"
-
         },
         {
             "id":11,
             "title": "cloud Developer",
             "organization":"telegram",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "Intern",
             "locations": ["New York"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -536,7 +535,7 @@
             "title": "Nodejs Developer",
             "organization":"telegram",
             "degree":"Masters",
-            "jopType": "Diploma",
+            "jobType": "full time",
             "locations": ["Toronto"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -588,7 +587,7 @@
             "title": "MS Developer",
             "organization":"microsoft",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "hybrid",
             "locations": ["New York"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -633,7 +632,7 @@
             "title": "Next Developer",
             "organization":"meta world",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "full time",
             "locations": ["New York"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -685,7 +684,7 @@
             "title": "Php Developer",
             "organization":"telegram",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "Intern",
             "locations": ["New Delhi"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -736,7 +735,7 @@
             "title": "C# Developer",
             "organization":"Vue and me",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "full time",
             "locations": ["New York"],
             "minimumQualification":[
                 "Where can I get some?",
@@ -788,7 +787,7 @@
             "title": "Wordpress Developer",
             "organization":"meta world",
             "degree":"Bachelors",
-            "jopType": "Diploma",
+            "jobType": "half time",
             "locations": ["New York"],
             "minimumQualification":[
                 "Where can I get some?",

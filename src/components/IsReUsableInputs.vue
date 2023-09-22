@@ -19,7 +19,7 @@
                 required: true
             },  
         }, 
-        emits:["update:modelValue"], 
+        emits:["update:modelValue"],
         methods:{
             
             handleUserData($event){              
@@ -27,7 +27,6 @@
 
             },
         },     
-     
   }
 </script>
 

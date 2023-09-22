@@ -4,7 +4,7 @@ import { beforeEach, expect } from "vitest";
 
 vi.mock("axios");
 describe("fetch jobs", ()=>{
-
+                              //before() runs once before each test
     beforeEach(()=>{ 
         axios.get.mockResolvedValue({
             data:[{
@@ -16,7 +16,7 @@ describe("fetch jobs", ()=>{
 
     it("it fetches jobs from api", async()=>{
        await fetchJobs();
-       expect(axios.get).toHaveBeenCalledWith("http://fake-api.com/jobs");
+       expect(axios.get).toHaveBeenCalledWith("http://job-market.vercel.app");
     });
     it("it extracts each job object", async()=>{
        

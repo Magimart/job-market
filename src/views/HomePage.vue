@@ -7,13 +7,12 @@
             w-full h-4/5 "
         >
             <div class="col-span-3 bg-slate-200 h-full "> 
-               More
             </div>
             <div class="col-span-5 bg-slate-500 h-full "> 
                <Headline/>
             </div>
             <div class="col-span-4 bg-slate-900 h-full "> 
-               side bar
+               col-4
             </div>
         </section>
         <section>
@@ -21,7 +20,6 @@
             <SpotLights>
             <template v-slot:default="slotProps"        
             >
-             <!-- :style="{backgroundImage: 'url(' + slotProps.sportlight.img')'}" -->
              <div 
              >
                <RouterLink 
@@ -50,7 +48,7 @@
 
 
 <script>
-import CollapsableAccordion from '../components/CollapsableAccordion.vue';
+ import CollapsableAccordion from '../components/CollapsableAccordion.vue';
 import Headline from '../components/Headline.vue';
 import JobFilterSideBar from '../components/JobFilterSideBar.vue';
 import SpotLights from '../components/SpotLights.vue';

@@ -1,5 +1,7 @@
 <template>
- 
+    <!-- :class="{primary: false}"
+     :class="{primary: primary}"
+     -->
      <div class="singinBtnWrapper bg-black h-12 w-max m-2">
         <button 
             @click=handleClick()
@@ -16,6 +18,7 @@
 
 export default{
     name: "ActionBtn",
+//    props:["text", "type"],
     props : {
         text: {
             type: String, require:true 
@@ -31,12 +34,11 @@ export default{
         },
     },
 
-
    computed:{
-    buttonClass(){
-        return {
-               primary: this.type === "primary", 
-               secondary: this.type === "secondary"
+        buttonClass(){
+            return {
+                primary: this.type === "primary", 
+                secondary: this.type === "secondary"
             }
         }
    },
@@ -60,7 +62,6 @@ button {
  @apply  bg-transparent text-blue-500 hover:text-white
 }
 </style>
-
 
 
 

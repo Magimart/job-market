@@ -44,10 +44,6 @@
     </div>
 </template>
 
-
-
-
-
 <script>
 
 
@@ -66,12 +62,12 @@ export default{
         },
         handleUserSubmition(){
            this.$router.push({
-                name: "searchResults",
+                name: "searchResults", 
                 query:{ userInput: this.userInput, location: this.userLocation}
            })  
         }
     },
-    
+  
 }
 
 </script>

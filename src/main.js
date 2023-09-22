@@ -1,3 +1,4 @@
+// import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import "@/index.css"
@@ -10,8 +11,6 @@ import { createPinia } from 'pinia';
 library.add(faSearch);
 library.add(faAngleDown);
 library.add(faAngleUp);
-
-// import "./index.css"
 
 const pinia = createPinia();
 createApp(App)

@@ -1,7 +1,7 @@
 <template>
     <div class="searchBarWrapper m-4 bg-slate-100f h-12 w-full ">
         <div class="searchIconWrapper items-center rounded-lg  bg-slate-300s  w-full h-full ">
-          <form class=" flex flex-row flex-nowrap h-full w-full  border border-yellow-600 space-x-1 rounded-full">
+          <form class=" flex flex-row flex-nowrap h-full w-full  border border-yellow-600 space-x-1 rounded-full">       
              <div class="flex flex-row w-full">
                 <h2>proffession</h2>
             <ReUsableInput 

@@ -23,7 +23,8 @@ describe("job search form result", ()=>{
                     }
                  }
             });
-            git push origin HEAD:main
+
+
           const isUserInput =  screen.getByRole('textbox', {  name: /proffession/i});
           await userEvent.type(isUserInput, "web developer");
            
@@ -35,9 +36,7 @@ describe("job search form result", ()=>{
             name: /search/i
           })
 
-          // assimilate click event triggered from user
           await userEvent.click(isSubmitButton)
-
            expect(pushVTestMock).toHaveBeenCalledWith({
               name: "searchResults", 
               query:{ userInput: "web developer", location: "Berlin"}
@@ -47,5 +46,6 @@ describe("job search form result", ()=>{
    
    });
 })
+
 
 

@@ -7,7 +7,6 @@ vi.mock("axios");
 
 describe("spotlight test", ()=>{
 
-
     it("provides img to the parent", async()=>{
 
          axios.get.mockResolvedValue({

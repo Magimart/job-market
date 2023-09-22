@@ -2,7 +2,6 @@
     <div >
        <ul class="bg-white flex flex-row flex-wrap">
         <li v-for="el in spotLights"  :key="el.id">
-           <!-- <slot :sportlight="el" -->
             <slot :img="el.img" :title="el.title" :decription="el.description "
               class="imageWraper h-56g h-24 w-full flex flex-row" 
            >el</slot>

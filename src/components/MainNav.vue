@@ -1,6 +1,5 @@
 <template>
     <header :class="['w-full', 'flex', 'flex-row', 'space-4', 'h-full', 'bg-slate-300', headerHeightClass] ">
-
     <div class="brandWrapper flex bg-stone-500 h-24 w-44 items-center justify-center">
         <RouterLink to="/">
             <span class="text-white font-bold">
@@ -80,8 +79,7 @@ data() {
     };
 },
 computed:{
-    ...mapState(useUserStore, ["isLoggedIn"]), 
-    
+    ...mapState(useUserStore, ["isLoggedIn"]),     
     headerHeightClass(){
         return{
             "h-20": !this.isLoggedIn,
@@ -95,3 +93,7 @@ methods:{
 }
 };
 </script> 
+
+
+
+

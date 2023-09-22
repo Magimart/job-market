@@ -12,7 +12,7 @@ describe("SearchResultNav", ()=>{
 
         render(SearchResultNav,   {      
                 global: {
-                    mocks:{
+                    mocks:{ 
                      $route: $route
                     },
                     stubs:{
@@ -52,6 +52,7 @@ describe("SearchResultNav", ()=>{
  
      const isScreen = screen.get;
 
+     console.log("________________________ is screen___________",isScreen)
      let isJobCount = screen.queryByText("123"); 
        expect(isJobCount).not.toBeInTheDocument();
 
@@ -59,4 +60,3 @@ describe("SearchResultNav", ()=>{
  });
 
 
-//  */

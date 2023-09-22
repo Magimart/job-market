@@ -14,14 +14,14 @@ describe("test job list item", ()=>{
 
         render(JobListItem  , {
             global: {
-                mocks:{
+                mocks:{ 
                  $route: $route
                 },
                 stubs:{
                 RouterLink: RouterLinkStub,
                 }
             },
-            props:{  // !!
+            props:{ 
                 el:{
                   title: "vue developer",
                 }

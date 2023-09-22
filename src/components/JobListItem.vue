@@ -34,7 +34,7 @@
 <script>
 export default {
  name: "JobListItem",
- props:{  // !!
+ props:{  
        el:{
         type: Object,
         required: true,

@@ -29,7 +29,9 @@
 import { mapState, mapActions } from "pinia";
 import JobListItem from "./JobListItem.vue";
 import {useJobsStore, FETCH_JOBS, 
-         GET_JOBS_BY_ORG 
+         GET_JOBS_BY_ORG , 
+         FILTER_USER_JOBS_BY_TYPE,
+         ALL_FILTERED_JOBS
         } from "@/stores/jobs"
 
 
@@ -43,7 +45,7 @@ export default{
              return parseInt(currentPage);
         },
         ...mapState(useJobsStore, {
-          GET_JOBS_BY_ORG,
+          GET_JOBS_BY_ORG, FILTER_USER_JOBS_BY_TYPE, ALL_FILTERED_JOBS,
 
            isPreviousPage(){
                 const previousPage = this.isCurrentPage - 1
@@ -53,7 +55,7 @@ export default{
             },
             isNextPage(){
                 const nextPage = this.isCurrentPage + 1;
-                const maxPage = this.GET_JOBS_BY_ORG.length / 5
+                const maxPage = this.ALL_FILTERED_JOBS.length / 5
                 return nextPage <= maxPage? nextPage : undefined ;
             },
 
@@ -63,8 +65,9 @@ export default{
                 const isFirstIndex = (pageNum-1);
                 const isLastIndex = pageNum * 5
 
-                const isLimitResponse = this.GET_JOBS_BY_ORG.slice(isFirstIndex, isLastIndex);
-                return this.GET_JOBS_BY_ORG.slice(isFirstIndex, isLastIndex);
+                const isLimitResponse = this.ALL_FILTERED_JOBS.slice(isFirstIndex, isLastIndex);
+                return this.ALL_FILTERED_JOBS.slice(isFirstIndex, isLastIndex);
+
                 return this.jobs.slice(0,5);
             },
         }),

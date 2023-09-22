@@ -5,7 +5,6 @@
         <div 
            class="w-full "
         >           
-            <!-- <slot name="title">  if no name is given then vue renders it as default Note must only b one default or name assigned-->
             <slot>
                  Sample title
             </slot>
