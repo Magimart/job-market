@@ -27,7 +27,6 @@
          </ul>
           <div class="flex flex-row justify-between">
              <SearchBar/>
-             <SearchBarWIthReUsableInputs/>
              <ProfileImage v-if="isLoggedIn"/>
              <ActionBtn v-else 
                         text="signin"
@@ -39,7 +38,6 @@
              <SearchResultNav/>
           </div>
           <div>
-            remove 
           </div>
    
      </nav>
@@ -50,19 +48,17 @@
 import ActionBtn from './ActionBtn.vue';
 import ProfileImage from './ProfileImage.vue';
 import SearchBar from './SearchBar.vue';
-import SearchBarWIthReUsableInputs from './ReUsableFormInputs.vue';
+ import SearchResultNav from './SearchResultNav.vue';
 import { RouterLink } from 'vue-router';
-import SearchResultNav from './SearchResultNav.vue';
 import {mapState, mapActions } from 'pinia';
 import {useUserStore } from '@/stores/users.js'
-
 
 
 
 export default {
 components: { ActionBtn, ProfileImage,
 SearchBar,
-SearchResultNav,
+ SearchResultNav,
  RouterLink },
 name: 'MainNav',
 data() {

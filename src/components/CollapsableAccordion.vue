@@ -10,7 +10,6 @@
                   <h3> {{header}}</h3>
             </div>
             <div class="h-hull w-12 flex items-center justify-center  p-1  hover:bg-slate-50">
-                <!-- {{ isOpen? "+": "x" }} -->
                 <font-awesome-icon :icon="fasAngle"/>
             </div>
         </div>
@@ -27,39 +26,25 @@
 </template>
 
 
+<script setup>
+import { ref, computed,  } from 'vue';
 
+defineProps({
+    header:{
+        type: String,
+        required: true
+    }
+});
 
+const isOpen = ref(false)
 
-<script>
-export default{
-
-    name: "CollapsableAccordion",
-    props:{
-        header:{
-            type: String,
-            required: true
-        }
-    },
-    data(){
-       return {
-           isOpen: false
-        }
-    },
-
-    computed:{
-      fasAngle(){
-        return this.isOpen? ["fas", "angle-up"] : ["fas", "angle-down"];
-      }
-    },
-
-    methods:{
-        openBox(){
-            console.log("this button is been clicked")
-           this.isOpen = !this.isOpen
-        }
-    },
-
-
+const openBox = () => {
+    isOpen.value = !isOpen .value
 }
+
+const fasAngle = computed(() => {
+    return isOpen.value? ["fas", "angle-up"] : ["fas", "angle-down"];
+})     
+
 
 </script>

@@ -43,41 +43,37 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import CollapsableAccordion from './CollapsableAccordion.vue';
-import {mapState, mapActions } from "pinia";
-import {useJobsStore, GET_UNIQUE_ORG, GET_UNIQUE_JOB_TYPES } from "@/stores/jobs"
-import {useUserStore, ADD_SELECTED_USER_ITEMS, ADD_SELECTED_USER_JOBTYPE } from "@/stores/users"
+import {useJobsStore } from "@/stores/jobs"
+
+import {useUserStore, 
+} from "@/stores/users"
+import { ref,  computed,  } from 'vue';
+import {useRouter} from 'vue-router'
 
 
-export default{ 
-    name: "JobFilterSideBar",
-    components: { CollapsableAccordion },
-    
-    data(){
-       return{
-         selectedOrg : [],
-         selectedJobType: []
-       }
-    },
+const selectedOrg = ref([])
+const selectedJobType = ref([]);
+const router = useRouter();
+const isUserItem = useUserStore()
+const isUseJobStore = useJobsStore()
+const GET_UNIQUE_ORG = computed(()=>isUseJobStore.GET_UNIQUE_ORG)
+const GET_UNIQUE_JOB_TYPES = computed(()=>isUseJobStore.GET_UNIQUE_JOB_TYPES)
 
-    computed:{   
-         ...mapState(useJobsStore, [GET_UNIQUE_ORG, GET_UNIQUE_JOB_TYPES] ),
-    },
 
- methods:{
-    ...mapActions(useUserStore, [ADD_SELECTED_USER_ITEMS, ADD_SELECTED_USER_JOBTYPE]),
-
-    selectedUserItems(){
-
-        this.ADD_SELECTED_USER_ITEMS(this.selectedOrg);
-        this.$router.push({name:"searchResults"})
-    },
-
-    selectedUserJobType(){
-          this.ADD_SELECTED_USER_JOBTYPE(this.selectedJobType)
-    },
-  
- }
+const selectedUserJobType=()=>{ 
+    isUserItem.ADD_SELECTED_USER_JOBTYPE(selectedJobType.value)
+    router.push({name:"searchResults"})
 }
+
+
+const selectedUserItems=() =>{
+    isUserItem.ADD_SELECTED_USER_ITEMS(selectedOrg.value);
+    router.push({name:"searchResults"})
+}
+
+
 </script>
+
+

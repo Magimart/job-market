@@ -1,5 +1,7 @@
 <template>
     <div class="searchResultPageWrapper relative w-full h-full">       
+        <div class="h- px-4 w-full flex itmes-center">
+        </div>
         <div class="flex flex-row w-full h-24 items-center space-x-6 justify-start px-5 ">
              <button 
                @click="goBackRouter"
@@ -24,28 +26,19 @@
  </template>
  
  
- <script>
+ <script setup>
 
 
 import JobFilterSideBar from '../components/JobFilterSideBar.vue';
 import JobListing from '../components/JobListing.vue';
+import {useRouter} from 'vue-router';
 
 
-  export default{
-     name:"JobSearchResultPage",
-     components:{ JobFilterSideBar, JobListing },
-     computed:{
-      sample(){
-        return "not neccessary"
-      }
-     },
-     methods:{
-       goBackRouter(){
-         const goBack1 = this.$router.push({name:"home"})
+const router = useRouter()
+
+  const goBackRouter= ()=>{
+         const goBack1 = router.push({name:"home"})
           return goBack1;
        }
-     }
-
- }
  
  </script>

@@ -9,8 +9,7 @@
              </div>   
              <label for="proffession" class="text-sm h-full flex items-center">proffession</label>
             <input
-               :value="userInput"
-               @input="userFormInput"
+               v-model="userInput"
                id="proffession"
                type="text"
                class="relative h-full w-1/2 flex flex-row bg-slate-100  px-4 border-3 border-orange-500 " 
@@ -23,8 +22,7 @@
 
             <label for="area" class="text-sm h-full flex items-center">area</label>
             <input
-               :value="userLocation"
-                @input="userLocation = $event.target.value"
+               v-model="userLocation"
                 id="area"
                type="text"
                class="relative h-full w-1/2 flex flex-row bg-slate-100  px-4 border-3 border-orange-500 " 
@@ -44,30 +42,22 @@
     </div>
 </template>
 
-<script>
+<script setup>
+import { ref  } from 'vue';
+import {useRouter} from 'vue-router'
 
 
-export default{
-    name: "SearchBar",
-    data() {
-        return {
-            userInput: "",
-            userLocation: "",
-        };
-    },
-    methods: {
-        userFormInput(event) {
-            this.userInput = event.target.value;
-            let isEmit = this.$emit;
-        },
-        handleUserSubmition(){
-           this.$router.push({
-                name: "searchResults", 
-                query:{ userInput: this.userInput, location: this.userLocation}
-           })  
-        }
-    },
-  
+const userInput = ref("") 
+const userLocation = ref("")
+const router = useRouter() 
+
+
+const handleUserSubmition = () =>{
+        router.push({
+            name: "searchResults", 
+            query:{ userInput: userInput.value, location: userLocation.value}
+        })  
 }
+
 
 </script>

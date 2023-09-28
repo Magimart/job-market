@@ -1,25 +1,20 @@
 <template>
-    <!-- :class="{primary: false}"
-     :class="{primary: primary}"
-     -->
-     <div class="singinBtnWrapper bg-black h-12 w-max m-2">
-        <button 
-            @click=handleClick()
-            :class="buttonClass"
-
-        > 
-          {{ text}}
-        </button>
-     </div>
+    <div class="singinBtnWrapper bg-black h-12 w-max m-2">
+    <button 
+        :class="buttonClass"
+    > 
+        {{ text}}
+    </button>
+    </div>
 </template>
 
 
-<script>
+<script setup>
+import {computed, toRefs}  from "vue";
 
-export default{
-    name: "ActionBtn",
-//    props:["text", "type"],
-    props : {
+
+
+    const props = defineProps ({
         text: {
             type: String, require:true 
         },
@@ -32,22 +27,20 @@ export default{
             }
 
         },
-    },
+    })
 
-   computed:{
-        buttonClass(){
-            return {
-                primary: this.type === "primary", 
-                secondary: this.type === "secondary"
-            }
-        }
-   },
-   methods: {
-    handleClick() {
-        console.log("i have been clicked xxx", this);
+
+const {type} = toRefs(props);
+
+const buttonClass = computed(() => {
+    return {
+
+        [type.value]: true
     }
-},
-}
+});
+
+
+
 
 </script>
 

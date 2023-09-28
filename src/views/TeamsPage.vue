@@ -12,12 +12,8 @@
             </h2>
         </template>
       </HeaderContainer>
-
     </div>
 </template>
-
-
-
 
 
 <script>

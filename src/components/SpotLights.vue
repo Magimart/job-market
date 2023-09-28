@@ -10,21 +10,19 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import axios from 'axios';
-  
-export default{
-          name: "SportLights",
-          
-          data(){
-            return{
-                spotLights:[]
-            }
-          },
-          async mounted(){
-            const isBaseUrl = import.meta.env.VITE_APP_API;
+import { ref, onMounted}  from "vue";
+
+
+const spotLights = ref([]);
+
+onMounted(async() =>{
+      const isBaseUrl = import.meta.env.VITE_APP_API;
             const getData = await axios.get(`${isBaseUrl}/spotlights`)
-             return this.spotLights = getData.data;
-          }
-}
+             return spotLights.value = getData.data;
+})
+  
+
+
 </script>

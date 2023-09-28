@@ -17,14 +17,9 @@
 
 
 
-
-
 <script>
 export default{
-
     name: "HeaderContainer", 
-
-
 }
 
 </script>

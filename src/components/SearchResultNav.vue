@@ -1,50 +1,39 @@
 <template>
     <div v-if="userOnSearchResultPage"  class="searchIconContainer flex flex-row
-      items-center justify-start 
-      w-full px-3 h-12 space-x-4
+        items-center justify-start 
+      w-full px-3 h-10 pt-4 space-x-2 
       "
     >
         <div>
             <font-awesome-icon :icon="['fas', 'search']"/>
         </div>
-        <div class="flex flex-row text-sm h-max w-full ">
-            <span class="  bg-orange-300 p-0.5">{{ isFilteredSearchResult}}: 
-                <span class="bg-green-400 px-0.5 ">jobs matched</span>
+        <div class="flex flex-row text-sm h-full w-full  bg-black bg-opacity-5">
+            <span class="  bg-orange-300 bg-opacity-10 p-0.5">
+                {{ isFilteredSearchResult.length}}
+                <span class="bg-green-400 bg-opacity-5 px-1 ">jobs matched</span>
             </span>                    
         </div> 
     </div>
 </template>
 
 
-<script>
-import { mapState, mapActions } from "pinia";
+<script setup>
+
+import { computed,  } from 'vue';
 import {useJobsStore, 
-         ALL_FILTERED_JOBS
         } from "@/stores/jobs"
+import {useRoute} from 'vue-router';
+  
+    const isJobSstore = useJobsStore();
+    const route = useRoute();
 
+    const userOnSearchResultPage = computed(() => {
+          return route.name === "searchResults"          
+    })
 
+    const isFilteredSearchResult = computed (()=>isJobSstore.ALL_FILTERED_JOBS)
+    
 
-export default{
-    name: "SearchResultNav",
-    data(){
-        return {
-            isJobResultNumuber: ""
-        }
-    }, 
-    computed: {
-        ...mapState(useJobsStore, {
-            ALL_FILTERED_JOBS, 
-
-            isFilteredSearchResult(){
-                return this.ALL_FILTERED_JOBS.length ;
-            },
-
-        }),
-       userOnSearchResultPage(){
-          return this.$route.name === "searchResults"          
-        } 
-    },
-}
 </script>
 
 

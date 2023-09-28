@@ -65,8 +65,6 @@ export default {
     color: #0f248d;
 }
 
-
-
 </style>
 
 
