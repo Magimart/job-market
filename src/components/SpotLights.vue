@@ -10,17 +10,22 @@
     </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import axios from 'axios';
 import { ref, onMounted}  from "vue";
 
-
-const spotLights = ref([]);
+interface SportLight {
+   id: string,
+   img: string,
+   title: string,
+   description: string
+}
+const spotLights = ref<SportLight[]>([]); //!!
 
 onMounted(async() =>{
-      const isBaseUrl = import.meta.env.VITE_APP_API;
-            const getData = await axios.get(`${isBaseUrl}/spotlights`)
-             return spotLights.value = getData.data;
+    const isBaseUrl = import.meta.env.VITE_APP_API;
+    const getData = await axios.get(`${isBaseUrl}/spotlights`)        
+   return spotLights.value = getData.data;
 })
   
 

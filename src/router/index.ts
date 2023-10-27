@@ -3,6 +3,7 @@ import HomePage from "../views/HomePage.vue";
 import JobSearchResultPage from "../views/JobSearchResultPage.vue";
 import SingleJobPage from "../views/SingleJobPage.vue";
 import TeamsPage from "../views/TeamsPage.vue"
+import AddNewJobPage from "../views/AddNewJobPage.vue";
 
 
 const routes =[
@@ -22,6 +23,11 @@ const routes =[
         path: "/jobs/results/:id", 
         name: "SingleJobPage",
         component:SingleJobPage
+    },
+    {
+        path: "/add-new-job",
+        name:"addNewJob",
+        component: AddNewJobPage
     },
     {
         path: "/teams",

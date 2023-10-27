@@ -1,12 +1,16 @@
 import axios from "axios";
 import  fetchJobs  from "../../../src/api/fetchJobs";
-import { beforeEach, expect } from "vitest";
+import { 
+       Mock, beforeEach,
+     } from "vitest";
 
 vi.mock("axios");
+const axiosGetMock = axios.get as Mock;
+
 describe("fetch jobs", ()=>{
                               //before() runs once before each test
     beforeEach(()=>{ 
-        axios.get.mockResolvedValue({
+        axiosGetMock.mockResolvedValue({
             data:[{
                 id:1,
                 title: "Vue Developer"  
@@ -14,10 +18,13 @@ describe("fetch jobs", ()=>{
        })
     })
 
-    it("it fetches jobs from api", async()=>{
+    it("it fetches jobs from api", async()=>{ 
        await fetchJobs();
-       expect(axios.get).toHaveBeenCalledWith("http://job-market.vercel.app");
+    //    expect(axios.get).toHaveBeenCalledWith("http://job-market.vercel.app");
+    expect(axios.get).toHaveBeenCalledWith("http://localhost:3000/jobs");
+
     });
+
     it("it extracts each job object", async()=>{
        
       const isJobObj = await fetchJobs();

@@ -1,9 +1,10 @@
-
 import { screen, render } from "@testing-library/vue";
-import HeaderContainer from '@/components/HeaderContainer.vue';
+// import HeaderContainer from '@/components/HeaderContainer.vue';
+import HeaderContainer from "../../../src/components/HeaderContainer.vue";
 
 
 describe("header container", ()=> {
+
 
     it("it allows child slot to display default title", ()=>{
          
@@ -28,7 +29,7 @@ describe("header container", ()=> {
 
          const subTitle= screen.queryByText("other title");
        
-         expect(subTitle).toBeInTheDocument()
+         expect(subTitle).not.toBeInTheDocument()
 
     })
 });

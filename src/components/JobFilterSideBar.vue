@@ -1,7 +1,7 @@
 <template>
     <div class="z-99 w-full flex flex-col p-5 ">
         <h2>filter search</h2>
-        <CollapsableAccordion header="Slot content"/>
+        <!-- <CollapsableAccordion header="Slot content"/> -->
         <CollapsableAccordion header="jobtype">
             <fieldset>
                 <ul class=" flex flex-row  flex-wrap h-full m-3                  

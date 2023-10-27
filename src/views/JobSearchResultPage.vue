@@ -5,7 +5,8 @@
         <div class="flex flex-row w-full h-24 items-center space-x-6 justify-start px-5 ">
              <button 
                @click="goBackRouter"
-               class="bg-green-500 p-1 m-1 rounded-md" >go back home </button> <h1 class="font-bold text-3xl">your search results</h1>
+               class="bg-green-500 p-1 m-1 rounded-md" >go back home </button> <h1 class="font-bold text-3xl">
+                your search results</h1>
          </div>   
         <section class="searchResultsWrapper grid grid-flow-col grid-cols-12 bg-blue-300
              w-full h-full relative "

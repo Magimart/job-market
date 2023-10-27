@@ -1,9 +1,9 @@
 <template>
-    <div class="jobListingWrapper w-full h-auto flex flex-col p-5">
+    <div class="jobListingWrapper w-full h-auto flex flex-col">
         <div v-for="job in limitResponse" >
             <JobListItem :key="job.id" :el="job"  />
         </div>
-        <div class="paeNavWrapper flex flex-row space-x-5 bg-gray-400 p-3 justify-center ">
+        <div class="paeNavWrapper flex flex-row space-x-4 bg-gray-400 bg-opacity-60 px-2 py-1 justify-center">
             <div>page:{{ isCurrentPage }}</div>
             <div>
                 <RouterLink 
@@ -25,23 +25,26 @@
     </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { mapState, mapActions } from "pinia";
 import JobListItem from "./JobListItem.vue";
+import {computed, ref, onMounted}  from "vue";
+import {useRoute} from 'vue-router';
 import {useJobsStore, 
-         //FETCH_JOBS, 
+        //  FETCH_JOBS, 
         //  GET_JOBS_BY_ORG , 
         //  FILTER_USER_JOBS_BY_TYPE,
         //  ALL_FILTERED_JOBS
-        } from "@/stores/jobs"
-import {computed, ref, onMounted}  from "vue";
-import {useRoute} from 'vue-router';
+    
+    } from "@/stores/jobs";
+
 
 const route = useRoute()
 const useJobStore = useJobsStore();
 
+
 onMounted( 
-    useJobStore.FETCH_JOBS      //!!
+    useJobStore.FETCH_JOBS      
 )
 
 const isCurrentPage = computed(() =>{
@@ -75,6 +78,7 @@ const limitResponse = computed(()=>{
      const isLimitResponse = ALL_FILTERED_JOBS.value.slice(isFirstIndex, isLastIndex);
 
 })
+
 
 
 </script>

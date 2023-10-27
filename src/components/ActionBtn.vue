@@ -1,33 +1,35 @@
 <template>
-    <div class="singinBtnWrapper bg-black h-12 w-max m-2">
+    <!-- <div class="singinBtnWrapper bg-black h-12 w-max m-2"> -->
     <button 
         :class="buttonClass"
     > 
         {{ text}}
     </button>
-    </div>
+    <!-- </div> -->
 </template>
 
 
-<script setup>
+<script lang="ts" setup>
 import {computed, toRefs}  from "vue";
 
 
+const props = defineProps ({
+    text: {
+        type: String, 
+        require:true 
+    },
 
-    const props = defineProps ({
-        text: {
-            type: String, require:true 
-        },
-        type: {
-            type: String, 
-            require:false, 
-            default: "primary", 
-            validator(value){
-                return ["primary", "secondary"].includes(value)
-            }
+    type: {
+        type: String, 
+        require:false, 
+        default: "primary", 
+        validator(value: string){
+            console.log("thisis is value", value)
+            return ["primary", "secondary"].includes(value)
+        }
 
-        },
-    })
+    },
+});
 
 
 const {type} = toRefs(props);
@@ -35,7 +37,7 @@ const {type} = toRefs(props);
 const buttonClass = computed(() => {
     return {
 
-        [type.value]: true
+        [type.value]: true,
     }
 });
 

@@ -1,51 +1,46 @@
 <template>
-    <div class="flex flex-row items-center justify-center bg-teal-200 bg-opacity-30 h-44 w-full">
-        <h1 :class="['text-3xl font-semi-bold', welcomeTextCss]" >{{ welcomeText }}</h1>
+    <div class="flex flex-row items-center justify-center bg-zinc-200 bg-opacity-80 px-5 h-44 w-full">
+        <h1 :class="['text-3xl font-semi-bold', welcomeTextCss]" >
+           {{ welcomeText }}
+        </h1>
     </div>
 </template>
 
 
-<script>
+<script lang="ts" setup>
  
 import { NextHeadLine } from "../utils/timer";
+import { ref, computed, onMounted, onBeforeMount }  from "vue";
 
 
+const welcomeText = ref("never surrender");
+const initialInterval = ref<ReturnType<typeof setInterval>>(); // to retrun any or unknown
 
-export default {
-    name: "HeadLine",
-    data() {
-        return {
-            welcomeText: "built for proffenssionals",
-            initialInterval: null
-        };
-    },
-    computed: {
-        welcomeTextCss() {
-            console.log("this key word ar headline", this.welcomeText);
-            return {
-                "welcometext1": this.welcomeText === "built for proffenssionals",
-                "welcometext2": this.welcomeText === "you can fly",
-                "welcometext3": this.welcomeText === "divesity is here",
-                "welcometext4": this.welcomeText === "show what you gat",
-                "welcometext5": this.welcomeText === "never surrender",
-            };
-        }
-    },
-    created() {
-        this.changeHeader();
-    },
-    beforeUnmount() {
-        clearInterval(this.initialInterval);
-    },
-    methods: {
-        changeHeader() {
-            this.initialInterval = setInterval(() => {
+const welcomeTextCss = computed(()=>{
+    return {
+        
+            "welcometext1": welcomeText.value === "built for proffenssionals",
+            "welcometext2": welcomeText.value === "you can fly",
+            "welcometext3": welcomeText.value === "divesity is here",
+            "welcometext4": welcomeText.value === "show what you gat",
+            "welcometext5": welcomeText.value === "never surrender",          
+            // [welcomeText.value.toLocaleLowerCase()]: true
+    };
+})
+
+
+const changeHeader=()=> {
+            initialInterval.value = setInterval(() => {
                 const isHeadlines = ["built for proffenssionals", "you can fly", "divesity is here", "show what you gat", "never surrender"];
-                this.welcomeText = NextHeadLine(isHeadlines, this.welcomeText);
+                welcomeText.value = NextHeadLine(isHeadlines, welcomeText.value);
             }, 4000);
+
         }
-    },
-}
+
+onMounted(changeHeader)
+onBeforeMount(()=>clearInterval(initialInterval.value))
+
+
 </script>
 
 <style scoped>

@@ -1,5 +1,20 @@
+// import type { Job } from "./api/types"
+
 const {ref,toRefs,toRef, computed, reactive} = require("vue")
 
+interface Job {
+   id: string,
+   title: string,
+   organization: string,
+   degree:string,
+   jobType:string,
+   locations:string[],
+   minimumQualification: string[],
+   preferredQualification: string[],
+   description: string[],
+   dateCreated: string
+ }
+ 
 
 const fruits = ["orange", "banana", "mango", "ananas"]
 const veges = ["sukuma", "tomato", "carrots"]
@@ -152,9 +167,22 @@ console.log("default names ",isComputeredTitle2.value);
 
 
 
+ const state1: Partial<Job> = {
+      organization : "Google",
+      jobType: "teil zeit"
+ }
 
+ const state2: Partial<Job> = {
+   organization : "Magima",
+   jobType: "teil zeit"
+}
 
+const state3WithInvalidTypes: Partial<Job> = {
+   organization : 5,
+   jobType: "teil zeit"
+}
 
+const checkThisOut = (): Job =>({ organization: "Gooogle"})
 
 
 
