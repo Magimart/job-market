@@ -17,6 +17,8 @@ const auth = getAuth();
 const db = getFirestore();
 const jobsCollection = collection(db, "jobs");
 
+console.log(jobsCollection)
+
 export { 
   auth, 
    db, 

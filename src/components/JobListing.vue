@@ -72,7 +72,7 @@ const limitResponse = computed(()=>{
                 
     const pageNum = isCurrentPage.value;
     const isFirstIndex = (pageNum-1);
-    const isLastIndex = pageNum * 5
+    const isLastIndex = pageNum * 4
 
     return ALL_FILTERED_JOBS.value.slice(isFirstIndex, isLastIndex);
      const isLimitResponse = ALL_FILTERED_JOBS.value.slice(isFirstIndex, isLastIndex);

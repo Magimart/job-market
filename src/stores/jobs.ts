@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 // import fetchJobs from "../api/fetchJobs";
 import { useUserStore } from "./users";
-import {jobsCollection} from "@/includes/firebase"; 
+import {jobsCollection } from "@/includes/firebase"; 
 import {  doc, setDoc,Timestamp, updateDoc, getDocs   } from "firebase/firestore";
 
 export const FETCH_JOBS = "FETCH_JOBS" 
@@ -12,21 +12,22 @@ export const GET_UNIQUE_JOB_TYPES = "GET_UNIQUE_JOB_TYPES";
 export const FILTER_USER_JOBS_BY_TYPE = "FILTER_USER_JOBS_BY_TYPE"; 
 export const ALL_FILTERED_JOBS ="ALL_FILTERED_JOBS";
 export const ADD_NEW_JOB = "ADD_NEW_JOB";
-// import type { Job } from "@/api/types";
-// import { Job } from "../api/types";
+import type { Job } from "@/api/types";
+//import { Job } from "../api/types";
 
-interface Job { 
-   id: string,
-   title: string,
-   organisation: string,
-   degree:string,
-   jobType:string,
-   locations:string[],
-   minimumQualification: string[],
-   preferredQualification: string[],
-   description: string[],
-   dateCreated: string
- }
+ 
+// interface Job { 
+//    id: string,
+//    title: string,
+//    organisation: string,
+//    degree:string,
+//    jobType:string,
+//    locations:string[],
+//    minimumQualification: string[],
+//    preferredQualification: string[],
+//    description: string[],
+//    dateCreated: string
+//  }
 
 
 interface JobsState {
@@ -44,6 +45,10 @@ interface JobsAction {
 }
 
 
+
+
+
+
 export const useJobsStore = defineStore("jobs", {
     state: () : JobsState=> ({     
        jobs: [],
@@ -56,9 +61,9 @@ export const useJobsStore = defineStore("jobs", {
          try {
 
             let temJob = []; // fix push() types
-            let  querySnapshot = await getDocs<JobsAction>(jobsCollection);
+             let  querySnapshot = await getDocs<JobsAction>(jobsCollection);
             querySnapshot.forEach((doc) => {
-
+                
                let id = doc.id;
                let  { 
                      title, organisation, degree, jobType,
